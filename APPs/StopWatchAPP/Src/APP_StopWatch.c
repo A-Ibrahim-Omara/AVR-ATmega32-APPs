@@ -115,6 +115,19 @@ void StopWatch(void)
 /*---------------------------------------------------------------------------------------------------------------------*/
 void APP_u8_GetNumber(void)
 {
+	/*---------------------------------------------------------------*/
+	/*---------------variables Description----------------*/
+	/*				---static_local_u8_flag---		      */
+	/* Flag =0 to determine the entered num is the minutes*/
+	/* Flag =1 to determine the entered num is the seconds*/
+	
+	/*              ---local_u32_pointer---			      */
+	/*Pointer to the minutes nums or the seconds nums     */
+	
+	/*              ---local_u8_loop_flag---			       */
+	/*Flag to check the condtion of leaving the while loop     */
+	/*---------------------------------------------------------------*/
+
 	static u8 static_local_u8_flag=0;
 	u8 local_u8_key1,local_u8_loop_flag=1;
 	u32 *local_u32_pointer =NULL;
